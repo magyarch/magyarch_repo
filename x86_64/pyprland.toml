@@ -1,0 +1,42 @@
+[pyprland]
+plugins = [
+  "scratchpads",
+  "expose",
+  "magnify",
+  "workspaces_follow_focus",
+]
+
+[workspaces_follow_focus]
+max_workspaces = 9
+
+[scratchpads.term]
+animation = "fromTop"
+command = "kitty --class kitty-dropterm"
+class = "kitty-dropterm"
+size = "75% 60%"
+
+[scratchpads.volume]
+animation = "fromTop"
+command = "pavucontrol"
+class = "pavucontrol"
+lazy = true
+size = "75% 60%"
+unfocus = "hide"
+
+[scratchpads.music]
+animation = "fromTop"
+command = "kitty --class Music -e ncmpcpp"
+class = "Music"
+size = "75% 60%"
+
+[scratchpads.file]
+animation = "fromTop"
+command = "kitty --class kitty -e vifm"
+unfocus = "hide"
+size = "75% 60%"
+lazy = true
+
+[expose]
+include_special = false
+
+
